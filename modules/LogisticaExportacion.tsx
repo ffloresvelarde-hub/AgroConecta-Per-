@@ -1,18 +1,17 @@
-
 import React, { useState } from 'react';
-import Card from '../components/Card';
-import { runJsonQuery } from '../lib/gemini';
-import Spinner from '../components/Spinner';
-import { LogisticaExportacionResponse } from '../types';
+import Card from '../components/Card.tsx';
+import { runJsonQuery } from '../lib/gemini.ts';
+import Spinner from '../components/Spinner.tsx';
+import { LogisticaExportacionResponse } from '../types.ts';
 import { Schema, Type } from '@google/genai';
-import OutputSection from '../components/OutputSection';
-import InfoList from '../components/InfoList';
-import InfoBlock from '../components/InfoBlock';
+import OutputSection from '../components/OutputSection.tsx';
+import InfoList from '../components/InfoList.tsx';
+import InfoBlock from '../components/InfoBlock.tsx';
 
-import CostIcon from '../components/icons/CostIcon';
-import DocumentIcon from '../components/icons/DocumentIcon';
-import ShieldIcon from '../components/icons/ShieldIcon';
-import NextStepIcon from '../components/icons/NextStepIcon';
+import CostIcon from '../components/icons/CostIcon.tsx';
+import DocumentIcon from '../components/icons/DocumentIcon.tsx';
+import ShieldIcon from '../components/icons/ShieldIcon.tsx';
+import NextStepIcon from '../components/icons/NextStepIcon.tsx';
 
 
 const LogisticaExportacion: React.FC = () => {

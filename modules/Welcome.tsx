@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { MODULES } from '../constants';
+import { MODULES } from '../constants.tsx';
 
 const Welcome: React.FC = () => {
   return (

@@ -1,9 +1,8 @@
-
 import React, { useState } from 'react';
-import Header from './components/Header';
-import SideNav from './components/SideNav';
-import Dashboard from './components/Dashboard';
-import { Module } from './types';
+import Header from './components/Header.tsx';
+import SideNav from './components/SideNav.tsx';
+import Dashboard from './components/Dashboard.tsx';
+import { Module } from './types.ts';
 
 const App: React.FC = () => {
   const [selectedModule, setSelectedModule] = useState<Module | null>(null);

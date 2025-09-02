@@ -1,13 +1,12 @@
-
 import React from 'react';
-import { Module } from '../types';
-import Welcome from '../modules/Welcome';
-import MercadoNegocio from '../modules/MercadoNegocio';
-import SaberAgricola from '../modules/SaberAgricola';
-import CreditoProteccion from '../modules/CreditoProteccion';
-import ClimaInteligente from '../modules/ClimaInteligente';
-import RedAgro from '../modules/RedAgro';
-import LogisticaExportacion from '../modules/LogisticaExportacion';
+import { Module } from '../types.ts';
+import Welcome from '../modules/Welcome.tsx';
+import MercadoNegocio from '../modules/MercadoNegocio.tsx';
+import SaberAgricola from '../modules/SaberAgricola.tsx';
+import CreditoProteccion from '../modules/CreditoProteccion.tsx';
+import ClimaInteligente from '../modules/ClimaInteligente.tsx';
+import RedAgro from '../modules/RedAgro.tsx';
+import LogisticaExportacion from '../modules/LogisticaExportacion.tsx';
 
 interface DashboardProps {
   selectedModule: Module | null;

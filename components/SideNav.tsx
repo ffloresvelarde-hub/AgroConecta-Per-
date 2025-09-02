@@ -1,7 +1,6 @@
-
 import React from 'react';
-import { Module } from '../types';
-import { MODULES } from '../constants';
+import { Module } from '../types.ts';
+import { MODULES } from '../constants.tsx';
 
 interface SideNavProps {
   selectedModule: Module | null;

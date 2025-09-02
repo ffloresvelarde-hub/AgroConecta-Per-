@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import Card from '../components/Card';
-import { runJsonQuery } from '../lib/gemini';
-import Spinner from '../components/Spinner';
-import { CreditoProteccionResponse } from '../types';
+import Card from '../components/Card.tsx';
+import { runJsonQuery } from '../lib/gemini.ts';
+import Spinner from '../components/Spinner.tsx';
+import { CreditoProteccionResponse } from '../types.ts';
 import { Schema, Type } from '@google/genai';
-import OutputSection from '../components/OutputSection';
-import InfoList from '../components/InfoList';
-import InfoBlock from '../components/InfoBlock';
+import OutputSection from '../components/OutputSection.tsx';
+import InfoList from '../components/InfoList.tsx';
+import InfoBlock from '../components/InfoBlock.tsx';
 
-import BankIcon from '../components/icons/BankIcon';
-import ChecklistIcon from '../components/icons/ChecklistIcon';
-import ShieldIcon from '../components/icons/ShieldIcon';
-import NextStepIcon from '../components/icons/NextStepIcon';
+import BankIcon from '../components/icons/BankIcon.tsx';
+import ChecklistIcon from '../components/icons/ChecklistIcon.tsx';
+import ShieldIcon from '../components/icons/ShieldIcon.tsx';
+import NextStepIcon from '../components/icons/NextStepIcon.tsx';
 
 const CreditoProteccion: React.FC = () => {
   const [loading, setLoading] = useState(false);

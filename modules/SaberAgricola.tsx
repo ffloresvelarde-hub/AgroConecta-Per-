@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import Card from '../components/Card';
-import { runJsonQuery, fileToGenerativePart } from '../lib/gemini';
-import Spinner from '../components/Spinner';
-import { SaberAgricolaResponse } from '../types';
+import Card from '../components/Card.tsx';
+import { runJsonQuery, fileToGenerativePart } from '../lib/gemini.ts';
+import Spinner from '../components/Spinner.tsx';
+import { SaberAgricolaResponse } from '../types.ts';
 import { Schema, Type } from '@google/genai';
-import OutputSection from '../components/OutputSection';
-import InfoList from '../components/InfoList';
-import InfoBlock from '../components/InfoBlock';
+import OutputSection from '../components/OutputSection.tsx';
+import InfoList from '../components/InfoList.tsx';
+import InfoBlock from '../components/InfoBlock.tsx';
 
-import DiagnosisIcon from '../components/icons/DiagnosisIcon';
-import ActionIcon from '../components/icons/ActionIcon';
-import BookIcon from '../components/icons/BookIcon';
-import ExpertIcon from '../components/icons/ExpertIcon';
-import CameraIcon from '../components/icons/CameraIcon';
+import DiagnosisIcon from '../components/icons/DiagnosisIcon.tsx';
+import ActionIcon from '../components/icons/ActionIcon.tsx';
+import BookIcon from '../components/icons/BookIcon.tsx';
+import ExpertIcon from '../components/icons/ExpertIcon.tsx';
+import CameraIcon from '../components/icons/CameraIcon.tsx';
 
 const SaberAgricola: React.FC = () => {
   const [loading, setLoading] = useState(false);

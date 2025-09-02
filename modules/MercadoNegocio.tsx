@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import Card from '../components/Card';
-import { runJsonQuery } from '../lib/gemini';
-import Spinner from '../components/Spinner';
-import { MercadoNegocioResponse } from '../types';
+import Card from '../components/Card.tsx';
+import { runJsonQuery } from '../lib/gemini.ts';
+import Spinner from '../components/Spinner.tsx';
+import { MercadoNegocioResponse } from '../types.ts';
 import { Schema, Type } from '@google/genai';
-import OutputSection from '../components/OutputSection';
-import InfoBlock from '../components/InfoBlock';
-import InfoList from '../components/InfoList';
+import OutputSection from '../components/OutputSection.tsx';
+import InfoBlock from '../components/InfoBlock.tsx';
+import InfoList from '../components/InfoList.tsx';
 
-import TrendIcon from '../components/icons/TrendIcon';
-import PriceTagIcon from '../components/icons/PriceTagIcon';
-import TargetIcon from '../components/icons/TargetIcon';
-import ChecklistIcon from '../components/icons/ChecklistIcon';
-import LightbulbIcon from '../components/icons/LightbulbIcon';
+import TrendIcon from '../components/icons/TrendIcon.tsx';
+import PriceTagIcon from '../components/icons/PriceTagIcon.tsx';
+import TargetIcon from '../components/icons/TargetIcon.tsx';
+import ChecklistIcon from '../components/icons/ChecklistIcon.tsx';
+import LightbulbIcon from '../components/icons/LightbulbIcon.tsx';
 
 const MercadoNegocio: React.FC = () => {
   const [loading, setLoading] = useState(false);

@@ -1,7 +1,6 @@
-
 import React from 'react';
-import { Module } from './types';
-import ShipIcon from './components/icons/ShipIcon';
+import { Module } from './types.ts';
+import ShipIcon from './components/icons/ShipIcon.tsx';
 
 export const MODULES = [
   {

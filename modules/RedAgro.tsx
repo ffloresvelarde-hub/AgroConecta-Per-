@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import Card from '../components/Card';
-import Spinner from '../components/Spinner';
-import { runJsonQuery } from '../lib/gemini';
-import { RedAgroResponse } from '../types';
+import Card from '../components/Card.tsx';
+import Spinner from '../components/Spinner.tsx';
+import { runJsonQuery } from '../lib/gemini.ts';
+import { RedAgroResponse } from '../types.ts';
 import { Schema, Type } from '@google/genai';
-import OutputSection from '../components/OutputSection';
-import InfoBlock from '../components/InfoBlock';
+import OutputSection from '../components/OutputSection.tsx';
+import InfoBlock from '../components/InfoBlock.tsx';
 
-import NetworkIcon from '../components/icons/NetworkIcon';
-import PencilIcon from '../components/icons/PencilIcon';
-import HandshakeIcon from '../components/icons/HandshakeIcon';
-import GovIcon from '../components/icons/GovIcon';
+import NetworkIcon from '../components/icons/NetworkIcon.tsx';
+import PencilIcon from '../components/icons/PencilIcon.tsx';
+import HandshakeIcon from '../components/icons/HandshakeIcon.tsx';
+import GovIcon from '../components/icons/GovIcon.tsx';
 
 const RedAgro: React.FC = () => {
   const [loading, setLoading] = useState(false);

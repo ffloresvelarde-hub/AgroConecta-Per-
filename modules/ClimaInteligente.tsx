@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import Card from '../components/Card';
-import { runJsonQuery } from '../lib/gemini';
-import Spinner from '../components/Spinner';
-import { ClimaInteligenteResponse } from '../types';
+import Card from '../components/Card.tsx';
+import { runJsonQuery } from '../lib/gemini.ts';
+import Spinner from '../components/Spinner.tsx';
+import { ClimaInteligenteResponse } from '../types.ts';
 import { Schema, Type } from '@google/genai';
-import OutputSection from '../components/OutputSection';
-import InfoBlock from '../components/InfoBlock';
-import InfoList from '../components/InfoList';
+import OutputSection from '../components/OutputSection.tsx';
+import InfoBlock from '../components/InfoBlock.tsx';
+import InfoList from '../components/InfoList.tsx';
 
-import CloudIcon from '../components/icons/CloudIcon';
-import ActionIcon from '../components/icons/ActionIcon';
-import LeafIcon from '../components/icons/LeafIcon';
-import GpsIcon from '../components/icons/GpsIcon';
+import CloudIcon from '../components/icons/CloudIcon.tsx';
+import ActionIcon from '../components/icons/ActionIcon.tsx';
+import LeafIcon from '../components/icons/LeafIcon.tsx';
+import GpsIcon from '../components/icons/GpsIcon.tsx';
 
 const ClimaInteligente: React.FC = () => {
   const [loading, setLoading] = useState(false);
