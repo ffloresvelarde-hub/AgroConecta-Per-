@@ -1,0 +1,7 @@
+{
+  "name": "AgroConecta Perú",
+  "description": "A comprehensive platform for Peruvian farmers and agricultural entrepreneurs to boost their national and international commercialization, integrating market intelligence, technical assistance, financing, climate adaptation, and collaboration tools.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
